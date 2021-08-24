@@ -2,6 +2,7 @@ window.onload = function() {
     var minutes = 0;
     var seconds = 00;
     var tens = 00;
+    var on = 0;
     
     var appendTens = document.getElementById("tens");
     var appendSeconds = document.getElementById("seconds");
@@ -37,7 +38,7 @@ window.onload = function() {
         appendTens.innerHTML = "0" + 0;
         }    
         
-        if (seconds > 25){
+        if (seconds > 59){
             minutes++;
             appendMinutes.innerHTML = minutes;
             seconds = "0" + 0;
@@ -46,11 +47,15 @@ window.onload = function() {
     }
 
     buttonStart.onclick = function () {
-        Interval = setInterval(startTimer, 10);
+        if(on == 0){
+            Interval = setInterval(startTimer, 10);
+        }
+        on = 1;
     }
 
     buttonStop.onclick = function() {
         clearInterval(Interval);
+        on = 0;
     }
 
     buttonReset.onclick = function() {
