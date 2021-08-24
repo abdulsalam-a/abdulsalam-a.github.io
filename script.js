@@ -66,5 +66,6 @@ window.onload = function() {
         appendTens.innerHTML = tens;
         appendSeconds.innerHTML = seconds;
         appendMinutes.innerHTML = minutes;
+        on = 0;
     }
 }

@@ -64,19 +64,6 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-}
-
-.control button {
-    width: 80%;
-    background: rgba(255,255,255,0);
-    border: none;
-    border: 1px solid rgb(2 ,2,2,0.5);
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 10px auto 10px;
-    
 }
 
 .clock button:hover {
@@ -107,6 +94,7 @@ body{
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    text-align: center;
     margin: 10px auto 10px;
     
 }
